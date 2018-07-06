@@ -56,11 +56,11 @@ func postFile(name, version, filename, targetIP string) error {
 }
 
 func main() {
-	if len(os.Args) < 5 {
+	if len(os.Args) < 4 {
 		fmt.Println("Usage: fw-upload-test [name] [version] [firmware-file] [target-ip]")
 		fmt.Println("    name: The name of the firmware being loaded (not the filename)")
 		fmt.Println("    version: The version of the firmware (e.g. 1.0; 1.0.2; 2.3+fixes)")
-		fmt.Println("    firmware-file: The path to the firmware file")
+		fmt.Println("    firmware-file: The path to the firmware Intel HEX file (cannot be binary at this time)")
 		fmt.Println("    target-ip: The IP address of the gateway running edge-connect. The default is 127.0.0.1.")
 		return
 	}
@@ -68,7 +68,11 @@ func main() {
 	name := os.Args[1]
 	version := os.Args[2]
 	firmwareFile := os.Args[3]
-	targetIP := os.Args[4]
+
+	targetIP := "127.0.0.1"
+	if len(os.Args) > 4 {
+		targetIP = os.Args[4]
+	}
 
 	postFile(name, version, firmwareFile, targetIP)
 }
