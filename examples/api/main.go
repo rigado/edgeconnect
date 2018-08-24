@@ -160,6 +160,7 @@ func main() {
 	setModeCmd.Flags().StringVarP(&url, "url", "u", "", "URL to send the request")
 	setModeCmd.MarkFlagRequired("mode")
 	setModeCmd.MarkFlagRequired("url")
+	setModeCmd.MarkFlagRequired("radio")
 
 	firmwareCmd.Flags().StringVarP(&radio, "radio", "r", "", "Radio to which to upload firmware")
 	firmwareCmd.Flags().StringVarP(&name, "name", "n", "", "Name of the firmware")
@@ -170,6 +171,7 @@ func main() {
 	firmwareCmd.MarkFlagRequired("file")
 	firmwareCmd.MarkFlagRequired("version")
 	firmwareCmd.MarkFlagRequired("url")
+	firmwareCmd.MarkFlagRequired("radio")
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
