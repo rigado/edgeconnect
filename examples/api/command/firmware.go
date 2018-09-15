@@ -5,7 +5,7 @@ import (
 	"log"
 
 	prettyjson "github.com/hokaccha/go-prettyjson"
-	"github.com/rigado/edge-connect/edgeconnect/api"
+	"github.com/rigado/edgeconnect/api"
 	"github.com/spf13/cobra"
 )
 

@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/rigado/edge-connect/edgeconnect"
+	"github.com/rigado/edgeconnect"
 )
 
 //...

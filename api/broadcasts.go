@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	sse "astuart.co/go-sse"
-	"github.com/rigado/edge-connect/edgeconnect"
+	"github.com/rigado/edgeconnect"
 
 	log "github.com/sirupsen/logrus"
 )

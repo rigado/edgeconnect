@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/rigado/edge-connect/edgeconnect"
+	"github.com/rigado/edgeconnect"
 	log "github.com/sirupsen/logrus"
 )
 

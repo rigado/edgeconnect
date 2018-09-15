@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rigado/edge-connect/examples/api/command"
+	"github.com/rigado/edgeconnect/examples/api/command"
 )
 
 func main() {

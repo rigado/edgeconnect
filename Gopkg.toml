@@ -1,6 +1,6 @@
 # Gopkg.toml example
 #
-# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
 # for detailed Gopkg.toml documentation.
 #
 # required = ["github.com/user/thing/cmd/thing"]
@@ -26,8 +26,8 @@
 
 
 [[constraint]]
-  name = "github.com/gorilla/mux"
-  version = "1.6.2"
+  branch = "master"
+  name = "astuart.co/go-sse"
 
 [[constraint]]
   branch = "master"
@@ -40,10 +40,6 @@
 [[constraint]]
   name = "github.com/spf13/cobra"
   version = "0.0.3"
-
-[[constraint]]
-  name = "astuart.co/go-sse"
-  branch = "master"
 
 [prune]
   go-tests = true
