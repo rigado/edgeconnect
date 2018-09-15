@@ -10,7 +10,15 @@ arm:
 	mkdir -p build
 	GOOS=linux GOARCH=arm go build -o build/ecapi_arm
 
+help:
+	@echo Available targets:
+	@echo amd64
+	@echo arm
+	@echo all
+	@echo "default (amd64)"
+	@echo clean
+
 clean:
 	rm -rf build
 
-.PHONY: default clean linux arm all
+.PHONY: default clean linux arm all help
