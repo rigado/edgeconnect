@@ -1,1 +1,8 @@
 fw-upload-test
+*.hex
+ecapi
+ecapi_arm
+vendor
+*.bin
+*.hex
+build
