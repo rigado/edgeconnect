@@ -13,16 +13,11 @@ var radio string
 var name string
 var version string
 var file string
-var url string
 
 var firmwareCmd = &cobra.Command{
 	Use:   "upload-fw",
 	Short: "Uploads firmware to a radio",
 	Run: func(cmd *cobra.Command, args []string) {
-		if url == "" {
-			url = defaultURL
-		}
-
 		ec := api.NewApi(url)
 
 		if radio != "" {

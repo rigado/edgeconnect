@@ -21,9 +21,6 @@ var getModeCmd = &cobra.Command{
 	Use:   "get",
 	Short: "Get mode for a radio",
 	Run: func(cmd *cobra.Command, args []string) {
-		if url == "" {
-			url = defaultURL
-		}
 		ec := api.NewApi(url)
 
 		if radio != "" {
@@ -64,9 +61,6 @@ var setModeCmd = &cobra.Command{
 	Short: "Set the mode for a radio",
 	Long:  "Sets the mode for a radio",
 	Run: func(cmd *cobra.Command, args []string) {
-		if url == "" {
-			url = defaultURL
-		}
 		ec := api.NewApi(url)
 
 		if radio == "" {

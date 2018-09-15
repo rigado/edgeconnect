@@ -1,5 +1,7 @@
 default: amd64
 
+all: amd64 arm
+
 amd64:
 	mkdir -p build
 	go build -o build/ecapi
@@ -11,4 +13,4 @@ arm:
 clean:
 	rm -rf build
 
-.PHONY: default clean linux arm
+.PHONY: default clean linux arm all

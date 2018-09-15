@@ -2,6 +2,8 @@ package command
 
 import "github.com/spf13/cobra"
 
+var url string
+
 var rootCmd = &cobra.Command{
 	Run: nil,
 }
