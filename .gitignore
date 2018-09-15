@@ -5,3 +5,4 @@ ecapi_arm
 vendor
 *.bin
 *.hex
+build

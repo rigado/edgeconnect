@@ -1,13 +1,14 @@
 default: amd64
 
 amd64:
-	go build -o ecapi
+	mkdir -p build
+	go build -o build/ecapi
 
 arm:
-	GOOS=linux GOARCH=arm go build -o ecapi_arm
+	mkdir -p build
+	GOOS=linux GOARCH=arm go build -o build/ecapi_arm
 
 clean:
-	rm ecapi
-	rm ecapi_arm
+	rm -rf build
 
 .PHONY: default clean linux arm
