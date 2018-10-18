@@ -14,6 +14,7 @@ func InitCommands() *cobra.Command {
 	modesCommand(rootCmd)
 	scanCommand(rootCmd)
 	firmwareCommand(rootCmd)
+	resetCommand(rootCmd)
 
 	return rootCmd
 }

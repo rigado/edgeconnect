@@ -54,3 +54,23 @@ func (a *apiInterface) SetScanning(scan bool) error {
 
 	return nil
 }
+
+func (a *apiInterface) ResetRadio(radio string) error {
+	payload := struct{}{}
+
+	b, err := json.Marshal(payload)
+	data := bytes.NewBuffer(b)
+
+	ep := fmt.Sprintf("%s/settings/%s/reset", a.url, radio)
+	resp, err := http.Post(ep, "application/json", data)
+	if err != nil {
+		return fmt.Errorf("error reseting %s: %s", radio, err.Error())
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("radio reset server error: %d", resp.StatusCode)
+	}
+
+	return nil
+}

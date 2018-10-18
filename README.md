@@ -13,6 +13,7 @@ This repository contains a Golang based example for interacting with the edge co
 - [X] Tau board support
 - [X] BLE Scanning
 - [X] Firmware Programming
+- [X] Radio Reset
 
 ## Demo Binary
 

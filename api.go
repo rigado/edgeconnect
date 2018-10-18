@@ -14,4 +14,5 @@ type API interface {
 	BroadcastEventsForDevice(string, chan struct{}) error
 	UploadFirmware(string, string, string, string) (string, error)
 	UploadFirmwareOld(string, string, string) (string, error)
+	ResetRadio(string) error
 }
