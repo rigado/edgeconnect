@@ -59,7 +59,7 @@ In the **edgeconnect/examples/api** directory, run:
 
 `make clean && make` (defaults to amd64)
 
-The binary can be builds for either `amd64` (default) or `arm` architectures. Run `make help` for available commands.
+The binary can be built for either `amd64` (default) or `arm` architectures. Run `make help` for available commands.
 
 The binaries are located in the **build** folder.
 
