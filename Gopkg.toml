@@ -24,11 +24,6 @@
 #   go-tests = true
 #   unused-packages = true
 
-
-[[constraint]]
-  branch = "master"
-  name = "astuart.co/go-sse"
-
 [[constraint]]
   branch = "master"
   name = "github.com/hokaccha/go-prettyjson"
