@@ -12,7 +12,6 @@ var rootCmd = &cobra.Command{
 func InitCommands() *cobra.Command {
 	versionCommand(rootCmd)
 	modesCommand(rootCmd)
-	scanCommand(rootCmd)
 	firmwareCommand(rootCmd)
 	resetCommand(rootCmd)
 
