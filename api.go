@@ -9,4 +9,5 @@ type API interface {
 	UploadFirmware(string, string, string, string) (string, error)
 	UploadFirmwareOld(string, string, string) (string, error)
 	ResetRadio(string) error
+	ClearAndRestart(clearManifest bool) error
 }
